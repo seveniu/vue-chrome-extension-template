@@ -1,14 +1,7 @@
 <template>
   <div id="app">
-    <h1>我是多页面---B页面</h1>
+    <h1>我是多页面---POPUP</h1>
     <img src="../../assets/logo.png">
-    <router-view/>
-    <router-link to="/">
-      <span>首页</span>
-    </router-link>
-    <router-link to="/child">
-      <span>子页面</span>
-    </router-link>
   </div>
 </template>
 

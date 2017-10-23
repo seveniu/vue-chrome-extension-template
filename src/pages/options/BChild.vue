@@ -9,7 +9,7 @@ export default {
   name: 'BChild',
   data () {
     return {
-      msg: '我是B的子页面'
+      msg: '我是的子页面'
     }
   }
 }

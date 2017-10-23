@@ -7,9 +7,9 @@ let pagesArr = []
 
 entryPages.forEach(function (item) {
   let curTemp = defaultTemp;
-  if(item.filename === 'b.html') {
-    curTemp = './template/bTemp.html'
-  }
+  // if(item.filename === 'b.html') {
+  //   curTemp = './template/bTemp.html'
+  // }
   pagesArr.push({
     filename: item.filename,
     template: curTemp,

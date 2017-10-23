@@ -1,13 +1,7 @@
 <template>
   <div id="app">
+    <h1>我是多页面---IFRAME</h1>
     <img src="../../assets/logo.png">
-    <ul>
-      <li><a href="/a.html">我是A页面</a></li>
-      <li><a href="/b.html">我是B页面</a></li>
-      <li><a href="/c.html">我是C页面</a></li>
-      <li><a href="/c.html">我是D页面</a></li>
-    </ul>
-    <router-view/>
   </div>
 </template>
 

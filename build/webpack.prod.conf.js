@@ -14,6 +14,11 @@ const pageHtml = require('./pages')
 const env = config.build.env
 
 let curWebpackConfig = {
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.runtime.js' // 在 webpack 1 中使用 'vue/dist/vue.common.js'
+    }
+  },
   module: {
     rules: utils.styleLoaders({
       sourceMap: config.build.productionSourceMap,
@@ -93,6 +98,11 @@ let curWebpackConfig = {
       {
         from: path.resolve(__dirname, '../static'),
         to: config.build.assetsSubDirectory,
+        ignore: ['.*']
+      },
+      {
+        from: path.resolve(__dirname, '../chrome-assets'),
+        to: config.build.assetsRoot,
         ignore: ['.*']
       }
     ])

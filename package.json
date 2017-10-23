@@ -8,7 +8,7 @@
     "entry-path": "node build/build-path.js",
     "dev": "npm run entry-path && node build/dev-server.js",
     "start": "npm run dev",
-    "build": "npm run entry-path && node build/build.js",
+    "build": "npm run entry-path && node build/build.js && node build/chrome.js",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
